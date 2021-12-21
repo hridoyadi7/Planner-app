@@ -144,10 +144,30 @@ function customizedFunc(){
             
         }
         if(dateToggler){
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
             currentDateTime.textContent=time;
             dateToggler=false;
             timeToggler=true;
         }else{
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
             currentDateTime.textContent=date;
             dateToggler=true;
             timeToggler=false;            
@@ -165,10 +185,30 @@ function customizedFunc(){
             
         }
         if(dateToggler){
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
             currentDateTime.textContent=time;
             dateToggler=false;
             timeToggler=true;
         }else{
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
             currentDateTime.textContent=date;
             dateToggler=true;
             timeToggler=false;            
@@ -180,12 +220,62 @@ function customizedFunc(){
         }else{
             mainHeading.textContent=obj2[i];
         }
+        if(dateToggler){
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
+            currentDateTime.textContent=date;            
+        }else{
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
+            currentDateTime.textContent=time;
+        }
         i--;
     }else if(f==1){
         if(count%2 ==0){
             mainHeading.textContent=obj1[i];
         }else{
             mainHeading.textContent=obj2[i];
+        }
+        if(dateToggler){
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
+            currentDateTime.textContent=date;            
+        }else{
+            d = new Date();
+            let utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+            let nd = new Date(utc + (3600000*+5.5));
+            let ist =  nd.toLocaleString();
+            
+            // console.log(ist);
+            let time=ist.slice(12,)
+            let date=ist.slice(0,10)
+            // console.log(time);
+            // console.log(date);
+            currentDateTime.textContent=time;
         }
         i++;
     }
